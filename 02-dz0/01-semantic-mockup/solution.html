@@ -1,4 +1,97 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <!-- Ваше решение -->
+    <head>
+        <meta charset="utf-8">
+        <title>Semantic markup</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                background-color: antiquewhite;
+                font-family: Arial, Helvetica, sans-serif
+            }
+            header {
+                text-align: center;
+            }
+            header h1 { 
+             color: white;
+             background-color: #9e9d4a;
+             padding: 20px;
+            }
+            nav {
+                background-color: #63620f;
+                padding: 20px;                
+            }
+            nav a {
+                color: wheat;
+                margin-left: 20px;                
+            }
+            nav a:hover {
+                color: white;
+            }
+            main {
+                padding: 20px 10px;
+                background-color: rgb(226, 175, 82);
+            }
+            article {
+                background-color: #f6f475;
+                padding: 10px 20px;
+                margin-bottom: 10px;
+            }
+            article h2 {
+                padding: 10px;
+                color: rgb(238, 122, 6);
+            }
+            ul, ol {
+                padding: 10px;
+                margin-left: 20px;
+            }
+            ul li, ol li {
+                margin-bottom: 10px;
+                color: #4d4b0b;
+            }
+            footer {
+                padding: 20px 10px;
+                background-color: #9e9d4a;
+                text-align: center;
+            }
+            footer p {
+                color: white;
+                font-size: 30px;
+            }
+           </style>
+    </head>
+    <body>
+        <header>
+            <h1>Header</h1>
+            <nav>
+                <a href="#">Navigation1</a>
+                <a href="#">Navigation2</a>
+                <a href="#">Navigation3</a>
+            </nav>
+        </header>
+        
+        <main>
+            <article>
+                <h2>Article1</h2>
+                <ul>
+                    <li>Оригинальная трилогия</li>
+                    <li>Трилогия приквелов</li>
+                    <li>Трилогия сиквелов</li>
+                </ul>
+            </article>
+            <article>
+                <h2>Article2</h2>
+                <ol>
+                    <li>Эпизод IV — Новая надежда</li>
+                    <li>Эпизод V — Империя наносит ответный удар</li>
+                    <li>Эпизод VI — Возвращение джедая</li>
+                </ol>
+            </article>
+        </main>
+        <footer><p>Footer</p></footer>
+    </body>
 </html>
