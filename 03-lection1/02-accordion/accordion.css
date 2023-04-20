@@ -1,11 +1,6 @@
 /* Стилизация аккордеона */
-.accordion-page {
-    padding: 100px;
-}
-
 .accordion__item {
-    max-width: 730px;
-    padding: 32px;
+    padding: 23px 31px;
     border: 1px solid var(--grey-3);
     border-radius: 8px;
     margin-bottom: 8px;
@@ -40,6 +35,10 @@
 .accordion__summary {
     position: relative;
     color: var(--black);
+}
+
+.accordion__content {
+    margin-bottom: 8px;
 }
 
 .accordion__text {
