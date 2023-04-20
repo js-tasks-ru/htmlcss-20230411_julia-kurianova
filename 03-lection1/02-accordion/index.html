@@ -5,14 +5,62 @@
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./accordion.css">
     </head>
-    <body>
-        <details>
-            <summary>
-                Accordion item
-            </summary>
-            <p>
-                Hidden content
-            </p>
-        </details>
+    <body class="accordion-page">
+        <div class="accordion">
+            <details class="accordion__item">
+                <summary class="accordion__summary">
+                    What is HTML?
+                </summary>
+                <p class="accordion__text">
+                    The HyperText Markup Language or HTML is the standard
+                    markup language for documents designed to be displayed in a web browser.
+                </p>
+                <p class="accordion__text">
+                    It is often assisted by technologies such as
+                    Cascading Style Sheets and scripting languages such as JavaScript.
+                </p>
+            </details>
+            <details class="accordion__item">
+                <summary class="accordion__summary">
+                    What is CSS?
+                </summary>
+                <p class="accordion__text">
+                    Cascading Style Sheets is a style sheet language used for describing the presentation of a
+                    document written in a markup language such as HTML or XML.
+                    CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.
+                </p>
+            </details>
+            <details class="accordion__item">
+                <summary class="accordion__summary">
+                    What is JavaScript?
+                </summary>
+                <p class="accordion__text">
+                    JavaScript, often abbreviated as JS, is a programming language that
+                    is one of the core technologies of the World Wide Web, alongside HTML and CSS.
+                    As of 2022, 98% of websites use JavaScript on the client side for
+                    webpage behavior, often incorporating third-party libraries.
+                </p>
+                <p class="accordion__text">
+                    Designed by: Brendan Eich of Netscape initially;
+                    others have also contributed to the ECMAScript standard.
+                </p>
+            </details>
+        </div>
     </body>
+    <script>
+        function onToggle(event) {
+            if (event.target.open) {
+                document.querySelectorAll(".accordion > .accordion__item[open]").forEach((el) => {
+                // Исключаем из перебора елемент который мы только что открыли
+                if (el === event.target) {
+                    return;
+                }
+                // Закрываем все остальные елементы <details>
+                el.open = false;
+                });
+            }
+        }
+    // Вешаем наблюдатель на все елементы <details> внутри акордиона
+    document.querySelectorAll(".accordion > .accordion__item").forEach((el) => el.addEventListener("toggle", onToggle));
+</script>
 </html>
