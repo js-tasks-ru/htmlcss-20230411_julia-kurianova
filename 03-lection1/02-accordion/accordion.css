@@ -1,1 +1,48 @@
 /* Стилизация аккордеона */
+.accordion__item {
+    padding: 23px 31px;
+    border: 1px solid var(--grey-3);
+    border-radius: 8px;
+    margin-bottom: 8px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.accordion__item:last-child {
+    margin-bottom: 0;
+}
+
+/* Убираем стандартный маркер Firefox */
+.accordion__item > .accordion__summary {
+    list-style: none;
+}  
+
+/* Добавляем собственный маркер для закрытого состояния */
+.accordion__item .accordion__summary:before {
+    content: url('../../assets/images/arrow-down.png');
+    font-family: "Font Awesome 5 free";
+    position: absolute;
+    right: 0px;
+}
+  
+  /* Добавляем собственный маркер для открытого состояния */
+.accordion__item[open] .accordion__summary:before {
+    content: url('../../assets/images/arrow-up.png');
+}
+
+.accordion__summary {
+    position: relative;
+    color: var(--black);
+}
+
+.accordion__content {
+    margin-bottom: 8px;
+}
+
+.accordion__text {
+    color: var(--grey-4);
+    padding-right: 25px;
+    text-align: justify;
+}
