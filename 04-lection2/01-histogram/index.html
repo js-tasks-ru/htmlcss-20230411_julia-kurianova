@@ -6,6 +6,30 @@
         <link rel="stylesheet" href="./histogram.css">
     </head>
     <body>
-
+        <div class="histogram">
+            <div class="histogram__header">
+                <div class="histogram__title">Total orders</div>
+                <a class="histogram__link" href="#">View all</a>
+            </div>
+            <div class="histogram__content">
+                <div class="histogram__amount">50254</div>
+                <div class="histogram__cols"></div>
+            </div>
+        </div>
     </body>
+    <script>
+        const maxColHeight = 50;
+        const maxColAmount = 30;
+        function createHistogram(colHeight, colAmount) {
+            const hist = document.querySelector(".histogram__cols");
+            let histogram = "";
+            for (let i = 0; i < maxColAmount; i++) {
+                let histCol = "<div class='histogram__col' ";
+                histCol += `style="height: ${Math.round(Math.random() * maxColHeight)}px;"`;
+                histogram += histCol + "></div>";
+            }
+            hist.innerHTML = histogram;
+        }
+        createHistogram(maxColHeight, maxColAmount);
+    </script>
 </html>
