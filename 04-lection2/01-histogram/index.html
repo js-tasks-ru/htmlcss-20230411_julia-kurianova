@@ -18,18 +18,17 @@
         </div>
     </body>
     <script>
-        const maxColHeight = 50;
         const maxColAmount = 30;
-        function createHistogram(colHeight, colAmount) {
+        function createHistogram(colAmount) {
             const hist = document.querySelector(".histogram__cols");
             let histogram = "";
             for (let i = 0; i < maxColAmount; i++) {
                 let histCol = "<div class='histogram__col' ";
-                histCol += `style="height: ${Math.round(Math.random() * maxColHeight)}px;"`;
+                histCol += `style="height: ${Math.round(Math.random() * 100)}%;"`;
                 histogram += histCol + "></div>";
             }
             hist.innerHTML = histogram;
         }
-        createHistogram(maxColHeight, maxColAmount);
+        createHistogram( maxColAmount);
     </script>
 </html>

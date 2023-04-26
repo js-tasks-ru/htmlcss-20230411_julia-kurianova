@@ -40,11 +40,11 @@
 .histogram__cols {
     display: flex;
     gap: 1px;
-    transform: rotate(180deg);
+    align-items: flex-end;
+    height: 50px;
 }
 
 .histogram__col {
-    width: 9px;
-    height: 50px;
+    flex-basis: 9px;
     background-color: var(--blue);
 }
