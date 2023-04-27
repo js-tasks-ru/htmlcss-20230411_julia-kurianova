@@ -2,7 +2,7 @@
     width: 350px;
     background-color: var(--white);
     height: 367px;
-    padding: 30px;
+    padding-bottom: 30px;
     box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
     border-radius: 12px;
     display: flex;
