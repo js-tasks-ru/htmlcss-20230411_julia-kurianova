@@ -1,0 +1,27 @@
+.sidemenu__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.sidemenu__links {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+}
+
+.sidemenu__link {
+    text-decoration: none;
+    color: var(--black);
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.sidemenu__link_home {
+    padding-top: 30px;
+}
