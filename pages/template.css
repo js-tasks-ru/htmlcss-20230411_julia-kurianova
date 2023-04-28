@@ -10,46 +10,25 @@
 
 .template__header {
     grid-area: header;
-    background-color: var(--white);
-    height: 50px;
 }
 
 .template__main {
-    grid-area: main;
-    padding: 36px 11% 0 11%;
     display: grid;
+    grid-area: main;
     grid-template-areas: 'sidebar content';
     grid-template-columns: 229px 1fr;
-}
-
-.sidebar {
-    grid-area: sidebar;
-}
-
-.component {
-    box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
-    border-radius: 12px;
+    column-gap: 56px;
+    padding: 0 11%;
 }
 
 .template__sidebar {
-    padding-right: 56px;
+    grid-area: sidebar;
 }
 
-.component {
+.template__component {
     grid-area: content;
-    background-color: var(--white);
 }
 
 .template__footer {
     grid-area: footer;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 18px;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: var(--grey-3);
-    text-align: center;
-    padding: 92px 0 56px 0;
 }

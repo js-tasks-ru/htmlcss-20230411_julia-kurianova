@@ -30,6 +30,7 @@
     --secondary: var(--purple);
     --secondary-dark: var(--purple-dark);
     --page-bg: var(--grey-5);
+    --main-bg: var(--white);
 }
 
 body {

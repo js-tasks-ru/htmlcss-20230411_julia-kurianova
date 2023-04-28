@@ -3,15 +3,19 @@
     <head>
         <link rel="stylesheet" href="../assets/css/main.css">
         <link rel="stylesheet" href="./template.css">
+        <link rel="stylesheet" href="../components/header/header.css">
         <link rel="stylesheet" href="../components/sidemenu/sidemenu.css">
+        <link rel="stylesheet" href="../components/sidebar/sidebar.css">
+        <link rel="stylesheet" href="../components/footer/footer.css">
+        <link rel="stylesheet" href="../components/component/component.css">
     </head>
     <body>
         <div class="template">
-            <header class="template__header"></header>
+            <header class="header header_page template__header"></header>
             <main class="template__main">
                 <aside class="sidebar template__sidebar">
-                    <section class="sidemenu">
-                        <h2 class="sidemenu__title">Components</h2>
+                    <section class="sidemenu sidebar__sidemenu">
+                        <h2 class="sidemenu__title">Containers</h2>
                         <nav class="sidemenu__links">
                             <a href="#" class="sidemenu__link">Modal</a>
                             <a href="#" class="sidemenu__link">Tooltip</a>
@@ -19,13 +23,27 @@
                             <a href="#" class="sidemenu__link">Calendar</a>
                             <a href="#" class="sidemenu__link">Histogram</a>
                             <a href="#" class="sidemenu__link">Custom form elements</a>
-                            <a href="#" class="sidemenu__link sidemenu__link_home">Main page</a>
+                        </nav>
+                    </section>
+                    <section class="sidemenu sidebar__sidemenu">
+                        <h2 class="sidemenu__title">Elements</h2>
+                        <nav class="sidemenu__links">
+                            <a href="#" class="sidemenu__link">Modal</a>
+                            <a href="#" class="sidemenu__link">Tooltip</a>
+                            <a href="#" class="sidemenu__link">Avatar</a>
+                            <a href="#" class="sidemenu__link">Calendar</a>
+                            <a href="#" class="sidemenu__link">Histogram</a>
+                            <a href="#" class="sidemenu__link">Custom form elements</a>
                         </nav>
                     </section>
                 </aside>
-                <div class="component"></div>
+                <div class="component template__component"></div>
             </main>
-            <footer class="template__footer">Reusable component library</footer>
+            <footer class="footer template__footer">
+                <div class="footer__title footer__title_page">
+                    Reusable component library
+                </div>
+            </footer>
         </div>
     </body>
 </html>
