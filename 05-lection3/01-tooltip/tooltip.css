@@ -1,11 +1,7 @@
-body {
-    text-align: center;
-    padding-top: 200px;
-}
-
 .tooltip {
     display: inline-block;
     position: relative;
+    cursor: pointer;
 }
 
 .tooltip__bubble {
@@ -37,10 +33,6 @@ body {
     top: 100%;
     left: 50%;
     transform: translateX(-50%);
-}
-
-.tooltip__trigger:hover {
-    cursor: pointer;
 }
 
 .tooltip__trigger:hover ~ .tooltip__bubble {
