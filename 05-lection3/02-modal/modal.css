@@ -1,11 +1,9 @@
 .modal {
-    position: relative;
-}
-
-.modal__wrapper {
-    background-color: rgba(196, 196, 196, .5);
-    height: 100vh;
+    position: fixed;
+    height: 100%;
+    width: 100%;
     display: none;
+    background-color: rgba(196, 196, 196, .5);
 }
 
 .modal__content {
