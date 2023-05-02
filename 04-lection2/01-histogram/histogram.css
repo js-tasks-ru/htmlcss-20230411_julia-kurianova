@@ -2,6 +2,7 @@
     font-style: normal;
     font-weight: 400;
     max-width: 354px;
+    width: 100%;
     border: 1px solid var(--grey-3);
     border-radius: 8px;
     padding: 16px 24px 24px;
