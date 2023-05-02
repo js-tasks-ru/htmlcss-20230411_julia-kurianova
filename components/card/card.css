@@ -1,7 +1,7 @@
 .card {
-    width: 350px;
+    max-width: 350px;
+    width: 100%;
     background-color: var(--white);
-    height: 367px;
     padding: 32px 25px;
     box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
     border-radius: 12px;
@@ -19,6 +19,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 228px;
 }
 
 .card__title {
@@ -27,6 +28,7 @@
     font-size: 21px;
     line-height: 25px;
     text-align: center;
+    margin-bottom: 6px;
 }
 
 .card__subtitle {
@@ -39,9 +41,13 @@
     color: #212429;
 }
 
+.card__footer {
+    padding-top: 25px;
+}
+
 @media (max-width: 375px) {
     .card {
-        padding: 12px 8px 8px;
+        padding: 12px 0px 8px;
         border-radius: 8px;
     }
 
