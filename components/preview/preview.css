@@ -6,9 +6,11 @@
 }
 
 .preview__cards {
-    display: flex;
+    display: grid;
     flex-wrap: wrap;
     gap: 30px;
+    grid-template-columns: repeat(auto-fit, 350px);
+    justify-items: center;
     justify-content: center;
 }
 
