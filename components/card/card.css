@@ -9,6 +9,7 @@
     justify-content:center;
     flex-direction: column;
 }
+
 .card__content {
     flex-grow: 1;
     display: flex;
@@ -22,4 +23,44 @@
     font-size: 21px;
     line-height: 25px;
     text-align: center;
+}
+
+.card__subtitle {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #212429;
+}
+
+@media (max-width: 375px) {
+    .card {
+        width: 164px;
+        height: 231px;
+        padding: 12px 0 8px;
+        border-radius: 8px;
+    }
+
+    .card__footer {
+        border-top: 1px solid var(--grey-2);
+        padding: 13px 0 8px;
+    }
+
+    .card__title {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .card__subtitle {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;    
+        text-align: center;
+        color: #ACB5BD;
+    }
 }

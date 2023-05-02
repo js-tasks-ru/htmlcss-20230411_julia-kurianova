@@ -9,4 +9,15 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    justify-content: center;
+}
+
+@media (max-width: 375px) {
+    .preview__cards {
+        gap: 16px;
+    }
+
+    .preview {
+        padding: 22px 0 32px;
+    }
 }
