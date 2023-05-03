@@ -3,3 +3,52 @@
     border-radius: 12px;
     background-color: var(--white);
 }
+
+.component__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 38px;
+    color: var(--grey-4);
+    padding: 32px 0 62px 42px;
+}
+
+.component__tabs {
+    display: flex;
+    border-bottom: 1px solid var(--grey-2);
+    column-gap: 24px;
+    padding-left: 16px;
+}
+
+.component__tab {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--grey-3);
+    padding-bottom: 13px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.component__tab_active {
+    padding-bottom: 8px;
+    border-bottom: 5px solid var(--black);
+    color: var(--black);
+    cursor: default;
+}
+
+.component__view {
+    padding: 0 0 64px 48px;
+}
+
+.component__code {
+    display: block;
+    padding: 50px 42px 64px;
+    overflow: scroll;
+    max-width: 664px;
+    width: 100%;
+    font-family: monospace;
+}

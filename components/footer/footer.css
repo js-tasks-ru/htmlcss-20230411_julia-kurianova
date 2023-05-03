@@ -21,6 +21,14 @@
     padding: 0 0 136px 0;
 }
 
+.footer__title_page {
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--grey-3);
+}
+
 @media (max-width: 375px) {
     .footer {
         display: none;
