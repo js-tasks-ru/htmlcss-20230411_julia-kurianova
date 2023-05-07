@@ -12,7 +12,6 @@
     font-size: 28px;
     line-height: 38px;
     color: var(--grey-4);
-    /* padding: 32px 0 62px 42px; */
     padding-left: 48px;
     margin-bottom: 58px;
 }
@@ -45,7 +44,6 @@
 }
 
 .component__view {
-    /* padding: 0 0 64px 48px; */
     padding-left: 48px;
 }
 
