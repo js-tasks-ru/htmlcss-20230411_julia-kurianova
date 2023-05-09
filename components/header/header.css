@@ -3,6 +3,10 @@
     background-color: var(--main-bg);
 }
 
+.header__top {
+    padding-bottom: 40px;
+}
+
 .header__title {
     font-size: 50px;
     font-weight: 500;
