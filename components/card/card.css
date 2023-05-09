@@ -11,7 +11,11 @@
 }
 .card__content {
     flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .card__title {
     font-style: normal;
     font-weight: 500;
