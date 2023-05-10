@@ -3,10 +3,32 @@
     border-top: 1px solid var(--grey-2);
     border-bottom: 1px solid var(--grey-2);
     padding: 68px 0 204px;
+    background-image: url('../../06-lection4/02-background-image/public/forest_2560.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .preview__cards {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+}
+
+@media (max-width: 400px) {
+    .preview {
+        background-image: url('../../06-lection4/02-background-image/public/forest_400.jpg');
+    } 
+}
+
+@media (max-width: 768px) {
+    .preview {
+        background-image: url('../../06-lection4/02-background-image/public/forest_768.jpg');
+    } 
+}
+
+@media (max-width: 1024px) {
+    .preview {
+        background-image: url('../../06-lection4/02-background-image/public/forest_1024.jpg');
+    } 
 }
