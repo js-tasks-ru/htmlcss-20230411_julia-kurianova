@@ -31,4 +31,12 @@
 
 .template__footer {
     grid-area: footer;
+    padding: 56px 0;
+}
+
+@media (max-width: 768px) {
+    .template__main {
+        grid-template-areas: 'content';
+        grid-template-columns: 1fr;
+    }
 }

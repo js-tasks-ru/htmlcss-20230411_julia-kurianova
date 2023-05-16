@@ -35,6 +35,7 @@
     transform: translateX(-50%);
 }
 
-.tooltip__trigger:hover ~ .tooltip__bubble {
+.tooltip__trigger:hover ~ .tooltip__bubble,
+.tooltip__trigger_hover ~ .tooltip__bubble {
     display: block;
 }

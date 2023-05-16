@@ -6,7 +6,20 @@
 }
 
 .preview__cards {
-    display: flex;
+    display: grid;
     flex-wrap: wrap;
     gap: 30px;
+    grid-template-columns: repeat(auto-fit, 350px);
+    justify-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 375px) {
+    .preview__cards {
+        gap: 16px;
+    }
+
+    .preview {
+        padding: 22px 0 32px;
+    }
 }

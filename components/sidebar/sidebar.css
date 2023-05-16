@@ -3,3 +3,10 @@
     flex-direction: column;
     row-gap: 32px;
 }
+
+@media (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+}
+    
