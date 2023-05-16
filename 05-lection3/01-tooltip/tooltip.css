@@ -2,8 +2,6 @@
     display: inline-block;
     position: relative;
     cursor: pointer;
-    width: 24px;
-    height: 24px;
 }
 
 .tooltip__bubble {
@@ -35,6 +33,11 @@
     top: 100%;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.tooltip__trigger_icon {
+    width: 24px;
+    height: 24px;
 }
 
 .tooltip__trigger:hover ~ .tooltip__bubble,
