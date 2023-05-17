@@ -3,12 +3,10 @@
     position: relative;
  }
  
- 
  .radio__input {
     position: absolute;
     clip: rect(0, 0, 0, 0);
  }
- 
  
  .radio__state {
     display: flex;
@@ -16,7 +14,6 @@
     gap: 12px;
     cursor: pointer;
  }
- 
  
  .radio__control {
     width: 28px;
@@ -26,7 +23,6 @@
     border-radius: 50%;
     position: relative;
  }
- 
  
  .radio__title {
     font-family: 'Inter';
@@ -55,3 +51,21 @@
     left: 3px;
  }
  
+ /* focus state */
+.radio__input:focus ~ .radio__state .radio__title {
+   text-decoration: underline;
+}
+
+/* disabled state */
+.radio__input:disabled ~ .radio__state {
+   cursor: default;
+}
+
+.radio__input:disabled ~ .radio__state .radio__control {
+   background-color: #DDE2E5;
+   border: 1px solid #DDE2E5;
+}
+
+.radio__input:disabled ~ .radio__state .radio__title {
+   color: #DDE2E5;
+}
