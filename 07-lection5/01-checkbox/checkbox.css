@@ -1,6 +1,7 @@
 .checkbox {
     display: inline-flex;
     position: relative;
+    vertical-align: middle;
 }
 
 .checkbox__input {
@@ -40,10 +41,11 @@
 
 .checkbox__icon {
     display: none;
+    width: 15px;
+    height: 13px;
 }
 
 /* checked state */
-
 .checkbox__input:checked ~ .checkbox__state .checkbox__control {
     background-color: #4263EB;
     border: 1px solid #4263EB;
@@ -54,7 +56,6 @@
 }
 
 /* focus state */
-
 .checkbox__input:focus ~ .checkbox__state .checkbox__title {
     text-decoration: underline;
 }
