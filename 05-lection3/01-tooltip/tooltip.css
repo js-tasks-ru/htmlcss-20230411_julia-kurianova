@@ -35,6 +35,11 @@
     transform: translateX(-50%);
 }
 
+.tooltip__trigger_icon {
+    width: 24px;
+    height: 24px;
+}
+
 .tooltip__trigger:hover ~ .tooltip__bubble,
 .tooltip__trigger_hover ~ .tooltip__bubble {
     display: block;

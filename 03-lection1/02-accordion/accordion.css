@@ -19,22 +19,24 @@
     list-style: none;
 }  
 
-/* Добавляем собственный маркер для закрытого состояния */
-.accordion__item .accordion__summary:before {
-    content: url('../../assets/images/arrow-down.png');
-    font-family: "Font Awesome 5 free";
-    position: absolute;
-    right: 0px;
-}
-  
-  /* Добавляем собственный маркер для открытого состояния */
-.accordion__item[open] .accordion__summary:before {
-    content: url('../../assets/images/arrow-up.png');
-}
-
 .accordion__summary {
     position: relative;
     color: var(--black);
+}
+
+/* Добавляем собственный маркер для закрытого состояния */
+.accordion__icon {
+    width: 18px;
+    height: 10px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Добавляем собственный маркер для открытого состояния */
+.accordion__item[open] .accordion__icon {
+    transform: rotateX(180deg);
 }
 
 .accordion__content {
