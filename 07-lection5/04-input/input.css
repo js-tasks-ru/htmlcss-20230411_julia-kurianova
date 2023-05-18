@@ -1,0 +1,62 @@
+.input__label {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #ACB5BD;
+    margin-bottom: 5px;
+}
+
+.input__control {
+    border: 1px solid #DDE2E5;
+    border-radius: 8px;
+    padding: 17px 50px 13px 24px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #495057;
+
+    min-width: 350px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.input__control:focus {
+    border: 1px solid #4263EB;
+    box-shadow: 0px 1px 1px rgba(51, 154, 240, 0.1);
+}
+
+.input_invalid .input__control:focus {
+    border: 1px solid #4263EB;
+    box-shadow: 0px 1px 1px rgba(51, 154, 240, 0.1);
+}
+
+.input_success .input__control {
+    background-image: url("../../assets/images/check-circle.svg");
+    background-size: 24px 24px;
+    background-position: center right 16px;
+    background-repeat: no-repeat;
+}
+
+.input_invalid .input__control {
+    border: 1px solid #F03D3E;
+    box-shadow: 0px 1px 1px rgba(240, 61, 62, 0.1);
+}
+
+.input_invalid .input__control {
+    background-image: url("../../assets/images/alert-triangle.svg");
+    background-size: 24px 24px;
+    background-position: center right 16px;
+    background-repeat: no-repeat;
+}
+
+::placeholder, /* Chrome, Firefox, Opera, Safari 10.1+ */
+:-ms-input-placeholder, /* Internet Explorer 10-11 */
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #DDE2E5;
+}
