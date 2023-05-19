@@ -24,6 +24,10 @@
     min-width: 350px;
     width: 100%;
     overflow: hidden;
+
+    background-size: 24px 24px;
+    background-position: center right 16px;
+    background-repeat: no-repeat;
 }
 
 .input__control:focus {
@@ -38,9 +42,6 @@
 
 .input_success .input__control {
     background-image: url("../../assets/images/check-circle.svg");
-    background-size: 24px 24px;
-    background-position: center right 16px;
-    background-repeat: no-repeat;
 }
 
 .input_invalid .input__control {
@@ -50,13 +51,10 @@
 
 .input_invalid .input__control {
     background-image: url("../../assets/images/alert-triangle.svg");
-    background-size: 24px 24px;
-    background-position: center right 16px;
-    background-repeat: no-repeat;
 }
 
-::placeholder, /* Chrome, Firefox, Opera, Safari 10.1+ */
-:-ms-input-placeholder, /* Internet Explorer 10-11 */
-::-ms-input-placeholder { /* Microsoft Edge */
+.input__control::placeholder, /* Chrome, Firefox, Opera, Safari 10.1+ */
+.input__control:-ms-input-placeholder, /* Internet Explorer 10-11 */
+.input__control::-ms-input-placeholder { /* Microsoft Edge */
     color: #DDE2E5;
 }
