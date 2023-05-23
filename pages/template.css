@@ -18,7 +18,6 @@
     grid-template-areas: 'sidebar content';
     grid-template-columns: 229px 1fr;
     column-gap: 56px;
-    padding: 0 11%;
 }
 
 .template__sidebar {
