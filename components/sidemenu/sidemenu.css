@@ -36,6 +36,15 @@
     line-height: 24px;
 }
 
-.sidemenu__link_mobile:hover {
+.sidemenu__link:hover {
+    opacity: 0.8;
+}
+
+.sidemenu__link_active {
     color: #D84910;
+    cursor: default
+}
+
+.sidemenu__link_active:hover {
+    opacity: 1;
 }
