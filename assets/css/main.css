@@ -6,6 +6,7 @@
 @import '../../components/preview/preview.css';
 @import '../../components/sidemenu/sidemenu.css';
 @import '../../components/card/card.css';
+@import '../../components/toggler/toggler.css';
 @import '../../components/footer/footer.css';
 
 :root {
