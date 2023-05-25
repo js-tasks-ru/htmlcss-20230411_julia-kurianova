@@ -2,6 +2,7 @@
     display: inline-flex;
     position: relative;
     width: 100%;
+    align-items: center;
 }
  
 .toggler__input {
@@ -45,6 +46,19 @@
     color: #495057;
 }
 
+.toggler__icon {
+    width: 24px;
+    height: 24px;
+}
+
+.toggler__icon {
+    color: var(--grey-3);
+}
+
+.toggler__icon:first-child {
+    color: var(--grey-4);
+}
+
 .toggler__input:checked ~ .toggler__state .toggler__control {
     background-color: #4263EB;
     border: 1px solid #4263EB;
@@ -54,6 +68,14 @@
     background-color: #FFFFFF;
     left: auto;
     right: 2px;
+}
+
+.toggler__input:checked ~ .toggler__state .toggler__icon:last-child {
+    color: var(--grey-4);
+}
+
+.toggler__input:checked ~ .toggler__state .toggler__icon:first-child {
+    color: var(--grey-3);
 }
 
 .toggler__input:focus ~ .toggler__state .toggler__title {

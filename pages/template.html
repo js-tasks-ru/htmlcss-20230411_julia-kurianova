@@ -3,18 +3,23 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../assets/css/main.css">
-        <link rel="stylesheet" href="../components/header/header.css">
-        <link rel="stylesheet" href="../components/sidemenu/sidemenu.css">
-        <link rel="stylesheet" href="../components/sidebar/sidebar.css">
-        <link rel="stylesheet" href="../components/footer/footer.css">
-        <link rel="stylesheet" href="../components/component/component.css">
         <link rel="stylesheet" href="./template.css">
+        <link rel="stylesheet" href="../09-lection7/01-burger-menu/burger-menu.css">
+        <script defer src="../09-lection7/01-burger-menu/burger-menu.js"></script>
+    
     </head>
     <body>
         <div class="template">
-            <header class="header header_page template__header">
+            <header class="header template__header">
                 <div class="container">
                     <div class="header__top">
+                        <button class="burger-menu-trigger" id="burger-menu-open">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 12H21" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M3 6H21" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M3 18H21" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>        
                         <div class="header__logo">
                             <a href="#">
                                 <svg width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -31,8 +36,74 @@
                                 </svg>
                             </a>
                         </div>
-                        <div class="menu"></div>
-                        <div class="header__settings"></div>
+                        <div class="menu">MENU</div>
+                        <div class="header__settings">settings</div>
+                    </div>
+                </div>
+        
+                <!-- burger menu -->
+                <div class="burger-menu" id="burger-menu">
+                    <div class="burger-menu__top">
+                    <button id="burger-menu-close" class="burger-menu-trigger burger-menu-trigger_close">
+                        <!-- burger-menu__icon  -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon-close">
+                            <use xlink:href="../../assets/images/icons.svg#cross"></use>
+                        </svg>
+                    </button>
+                    <div class="logo burger-menu__logo">
+                        <a href="#">
+                            <svg width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_16746_155)">
+                                    <rect y="1" width="30" height="30" fill="#212429"/>
+                                    <rect x="38" width="32" height="32" rx="16" fill="#212429"/>
+                                    <path d="M78 0L110 32H78V0Z" fill="#212429"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_16746_155">
+                                        <rect width="110" height="32" fill="white"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                    <div class="mobile-menu">
+                        <div class="mobile-menu__divider"></div>
+                        <div class="mobile-menu__group">
+                        <label class="toggler mobile-menu__mode">
+                            <input type="checkbox" class="toggler__input">
+                            <div class="toggler__state toggler__state_menu">
+                                <div class="toggler__control"></div>
+                                <div class="toggler__title">Dark mode</div>
+                            </div>
+                        </label>        
+                        </div>
+        
+                        <div class="mobile-menu__divider"></div>
+        
+                        <section class="sidemenu mobile-menu__sidemenu">
+                            <h2 class="sidemenu__title sidemenu__title_mobile">Elements</h2>
+                            <nav class="sidemenu__links sidemenu__links_mobile">
+                                <a href="#" class="sidemenu__link sidemenu__link_mobile sidemenu__link_active">Avatar</a>
+                                <a href="#" class="sidemenu__link sidemenu__link_mobile">Custom form elements</a>
+                                <a href="#" class="sidemenu__link sidemenu__link_mobile">Button</a>
+                                <a href="#" class="sidemenu__link sidemenu__link_mobile">Custom form elements</a>
+                                <a href="#" class="sidemenu__link sidemenu__link_mobile">Button</a>
+                            </nav>
+                        </section>
+        
+                        <div class="mobile-menu__divider"></div>
+        
+                        <section class="sidemenu mobile-menu__sidemenu">
+                            <h2 class="sidemenu__title sidemenu__title_mobile">Containers</h2>
+                            <nav class="sidemenu__links sidemenu__links_mobile">
+                                <a href="#" class="sidemenu__link sidemenu__link_mobile">Avatar</a>
+                                <a href="#" class="sidemenu__link sidemenu__link_mobile">Custom form elements</a>
+                                <a href="#" class="sidemenu__link sidemenu__link_mobile">Button</a>
+                                <a href="#" class="sidemenu__link sidemenu__link_mobile">Custom form elements</a>
+                                <a href="#" class="sidemenu__link sidemenu__link_mobile">Button</a>
+                            </nav>
+                        </section>
                     </div>
                 </div>
             </header>

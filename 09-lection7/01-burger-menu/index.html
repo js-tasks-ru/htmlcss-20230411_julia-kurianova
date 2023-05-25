@@ -35,12 +35,32 @@
                         </svg>
                     </a>
                 </div>
-                <div class="menu"></div>
-                <div class="header__settings"></div>
+                <div class="header__settings">
+                    <div class="menu header__menu">
+                        <a href="#" class="menu__item menu__item_active">Components</a>
+                        <a href="#" class="menu__item">About</a>
+                        <a href="#" class="menu__item">Contact</a>
+                    </div>
+                    <div class="header__mode">
+                        <label class="toggler">
+                            <input type="checkbox" class="toggler__input">
+                            <!-- for mobile toggler__state_menu -->
+                            <div class="toggler__state">
+                                <svg class="toggler__icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <use href="../../assets/images/icons.svg#sun"></use>
+                                </svg>                
+                                <div class="toggler__control"></div>
+                                <svg class="toggler__icon" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <use href="../../assets/images/icons.svg#moon"></use>
+                                </svg>            
+                            </div>
+                        </label>            
+                    </div>
+                </div>
             </div>
         </div>
-    </header>
 
+        <!-- burger menu -->
         <div class="burger-menu" id="burger-menu">
             <div class="burger-menu__top">
             <button id="burger-menu-close" class="burger-menu-trigger burger-menu-trigger_close">
@@ -105,5 +125,7 @@
                 </section>
             </div>
         </div>
+    </header>
+
 </body>
 </html

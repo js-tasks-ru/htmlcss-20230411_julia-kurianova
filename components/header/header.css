@@ -3,9 +3,39 @@
     background-color: var(--main-bg);
 }
 
+.header__settings {
+    display: flex;
+}
+
 .header__top {
     display: flex;
+    justify-content: space-between;
     position: relative;
+}
+
+.header__menu {
+    margin-right: 57px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+}
+
+.menu__item {
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--grey-3);
+}
+
+.menu__item_active {
+    color: var(--black);
 }
 
 @media (max-width: 768px) {
@@ -14,7 +44,7 @@
         padding: 0 12px;
     }
 
-    .menu, .header__settings {
+    .header__settings {
         display: none;
     }
     
