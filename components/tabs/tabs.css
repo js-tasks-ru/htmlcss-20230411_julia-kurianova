@@ -1,0 +1,45 @@
+.tabs__content {
+    background: #F9FAFC;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.tabs__content_complex,
+.tabs__content_simple {
+    display: none;
+}
+
+#all-tab:checked ~ .tabs__content {
+    display: block;
+}
+
+#complex-tab:checked ~ .tabs__content_complex {
+    display: block;
+}
+
+#simple-tab:checked ~ .tabs__content_simple {
+    display: block;
+}
+
+.tabs__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--grey-3);
+    padding-bottom: 8px;
+}
+
+.tabs__title:hover {
+    cursor: pointer;
+}
+
+#all-tab:checked ~ .tabs__scroller [for="all-tab"],
+#complex-tab:checked ~ .tabs__scroller [for="complex-tab"],
+#simple-tab:checked ~ .tabs__scroller [for="simple-tab"] {
+    color: var(--black);
+    border-bottom: 5px solid #212429;
+}
