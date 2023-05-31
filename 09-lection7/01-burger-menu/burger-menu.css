@@ -1,14 +1,3 @@
-.burger-menu-trigger {
-    display: none;
-    cursor: pointer;
-    border: none;    
-    position: absolute;
-    background: transparent;
-    left: 19px;
-    top: 50%;
-    transform: translate(0, -50%);
-}
-
 .burger-menu {
     position: fixed;
     top: 0;
