@@ -32,37 +32,41 @@
     justify-self: center;
 }
 
-.burger-menu-trigger_close {
+.burger-menu__close {
     display: block;
+    cursor: pointer;
     width: 32px;
     height: 32px;
     border-radius: 50%;
     background: #DDE2E5;
     padding: 4px;
+    border: none;    
+    position: absolute;
+    left: 19px;
+    top: 50%;
+    transform: translate(0, -50%);
 }
 
 .burger-menu[data-open] {
     transform: translateX(0);
 }
 
-.mobile-menu {
+.burger-menu__content {
     padding: 16px 16px 43px 16px;
 }
 
-.mobile-menu__mode {
+.burger-menu__mode {
     margin-bottom: 24px;
 }
 
-.mobile-menu__divider {
+.burger-menu__divider {
     height: 1px;
     background-color: #DDE2E5;
     margin-bottom: 24px;
 }
 
-@media (max-width: 768px) {
-    .burger-menu-trigger {
-        display: block;
-    }
+.burger-menu__sidemenu {
+    margin-bottom: 24px;
 }
 
 @media (min-width: 769px) {

@@ -15,15 +15,23 @@
 
 .header__menu {
     margin-right: 57px;
-}
-
-.menu {
     display: flex;
     align-items: center;
     column-gap: 24px;
 }
 
-.menu__item {
+.header__burger-btn {
+    display: none;
+    cursor: pointer;
+    border: none;    
+    position: absolute;
+    background: transparent;
+    left: 19px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.header__menu-item {
     display: inline-block;
     text-decoration: none;
     font-family: 'Inter';
@@ -34,7 +42,7 @@
     color: var(--grey-3);
 }
 
-.menu__item_active {
+.header__menu-item_active {
     color: var(--black);
 }
 
@@ -55,6 +63,10 @@
 
     .header {
         background-color: #F9FAFC;
+    }
+
+    .header__burger-btn {
+        display: block;
     }
 }
 

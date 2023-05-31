@@ -12,7 +12,7 @@
     <header class="header">
         <div class="container">
             <div class="header__top">
-                <button class="burger-menu-trigger" id="burger-menu-open">
+                <button class="header__burger-btn" id="burger-menu-open">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M3 12H21" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         <path d="M3 6H21" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -36,10 +36,10 @@
                     </a>
                 </div>
                 <div class="header__settings">
-                    <div class="menu header__menu">
-                        <a href="#" class="menu__item menu__item_active">Components</a>
-                        <a href="#" class="menu__item">About</a>
-                        <a href="#" class="menu__item">Contact</a>
+                    <div class="header__menu">
+                        <a href="#" class="header__menu-item header__menu-item_active">Components</a>
+                        <a href="#" class="header__menu-item">About</a>
+                        <a href="#" class="header__menu-item">Contact</a>
                     </div>
                     <div class="header__mode">
                         <label class="toggler">
@@ -63,7 +63,7 @@
         <!-- burger menu -->
         <div class="burger-menu" id="burger-menu">
             <div class="burger-menu__top">
-            <button id="burger-menu-close" class="burger-menu-trigger burger-menu-trigger_close">
+            <button id="burger-menu-close" class="burger-menu__close">            
                 <!-- burger-menu__icon  -->
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon-close">
                     <use xlink:href="../../assets/images/icons.svg#cross"></use>
@@ -86,44 +86,44 @@
                 </a>
             </div>
         </div>
-            <div class="mobile-menu">
-                <div class="mobile-menu__divider"></div>
-                <div class="mobile-menu__group">
-                <label class="toggler mobile-menu__mode">
-                    <input type="checkbox" class="toggler__input">
-                    <div class="toggler__state toggler__state_menu">
-                        <div class="toggler__control"></div>
-                        <div class="toggler__title">Dark mode</div>
-                    </div>
-                </label>        
+        <div class="burger-menu__content">
+            <div class="burger-menu__divider"></div>
+            <div class="burger-menu__group">
+            <label class="toggler burger-menu__mode">
+                <input type="checkbox" class="toggler__input">
+                <div class="toggler__state toggler__state_menu">
+                    <div class="toggler__control"></div>
+                    <div class="toggler__title">Dark mode</div>
                 </div>
-
-                <div class="mobile-menu__divider"></div>
-
-                <section class="sidemenu mobile-menu__sidemenu">
-                    <h2 class="sidemenu__title sidemenu__title_mobile">Elements</h2>
-                    <nav class="sidemenu__links sidemenu__links_mobile">
-                        <a href="#" class="sidemenu__link sidemenu__link_mobile sidemenu__link_active">Avatar</a>
-                        <a href="#" class="sidemenu__link sidemenu__link_mobile">Custom form elements</a>
-                        <a href="#" class="sidemenu__link sidemenu__link_mobile">Button</a>
-                        <a href="#" class="sidemenu__link sidemenu__link_mobile">Custom form elements</a>
-                        <a href="#" class="sidemenu__link sidemenu__link_mobile">Button</a>
-                    </nav>
-                </section>
-
-                <div class="mobile-menu__divider"></div>
-
-                <section class="sidemenu mobile-menu__sidemenu">
-                    <h2 class="sidemenu__title sidemenu__title_mobile">Containers</h2>
-                    <nav class="sidemenu__links sidemenu__links_mobile">
-                        <a href="#" class="sidemenu__link sidemenu__link_mobile">Avatar</a>
-                        <a href="#" class="sidemenu__link sidemenu__link_mobile">Custom form elements</a>
-                        <a href="#" class="sidemenu__link sidemenu__link_mobile">Button</a>
-                        <a href="#" class="sidemenu__link sidemenu__link_mobile">Custom form elements</a>
-                        <a href="#" class="sidemenu__link sidemenu__link_mobile">Button</a>
-                    </nav>
-                </section>
+            </label>
             </div>
+
+            <div class="burger-menu__divider"></div>
+
+            <section class="sidemenu burger-menu__sidemenu">
+                <h2 class="sidemenu__title sidemenu__title_mobile">Elements</h2>
+                <nav class="sidemenu__links sidemenu__links_mobile">
+                    <a href="#" class="sidemenu__link sidemenu__link_mobile sidemenu__link_active">Avatar</a>
+                    <a href="#" class="sidemenu__link sidemenu__link_mobile">Custom form elements</a>
+                    <a href="#" class="sidemenu__link sidemenu__link_mobile">Button</a>
+                    <a href="#" class="sidemenu__link sidemenu__link_mobile">Custom form elements</a>
+                    <a href="#" class="sidemenu__link sidemenu__link_mobile">Button</a>
+                </nav>
+            </section>
+
+            <div class="burger-menu__divider"></div>
+
+            <section class="sidemenu burger-menu__sidemenu">
+                <h2 class="sidemenu__title sidemenu__title_mobile">Containers</h2>
+                <nav class="sidemenu__links sidemenu__links_mobile">
+                    <a href="#" class="sidemenu__link sidemenu__link_mobile">Avatar</a>
+                    <a href="#" class="sidemenu__link sidemenu__link_mobile">Custom form elements</a>
+                    <a href="#" class="sidemenu__link sidemenu__link_mobile">Button</a>
+                    <a href="#" class="sidemenu__link sidemenu__link_mobile">Custom form elements</a>
+                    <a href="#" class="sidemenu__link sidemenu__link_mobile">Button</a>
+                </nav>
+            </section>
+        </div>
         </div>
     </header>
 
