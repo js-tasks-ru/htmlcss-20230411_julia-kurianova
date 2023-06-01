@@ -22,3 +22,29 @@
     font-size: 14px;
     line-height: 22px;
 }
+
+.sidemenu__links_mobile {
+    row-gap: 16px;
+}
+
+.sidemenu__title_mobile {
+    color: var(--grey-3)
+}
+
+.sidemenu__link_mobile {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.sidemenu__link:hover {
+    opacity: 0.8;
+}
+
+.sidemenu__link_active {
+    color: #D84910;
+    cursor: default
+}
+
+.sidemenu__link_active:hover {
+    opacity: 1;
+}

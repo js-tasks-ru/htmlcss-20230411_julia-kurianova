@@ -4,7 +4,11 @@
 @import '../../components/container/container.css';
 @import '../../components/header/header.css';
 @import '../../components/preview/preview.css';
+@import '../../components/sidemenu/sidemenu.css';
+@import '../../components/sidebar/sidebar.css';
 @import '../../components/card/card.css';
+@import '../../components/component/component.css';
+@import '../../components/toggler/toggler.css';
 @import '../../components/footer/footer.css';
 
 :root {
