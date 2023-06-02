@@ -1,6 +1,7 @@
 .preview {
     background: var(--white);
     padding-bottom: 204px;
+    margin-top: 15px;
 }
 
 .preview__title {
@@ -21,12 +22,6 @@
     grid-template-columns: repeat(auto-fit, 350px);
     justify-items: center;
     justify-content: center;
-}
-
-@media (max-width: 1110px) {
-    .preview__title {
-        padding: 0 16px;
-    }
 }
 
 @media (max-width: 768px) {
