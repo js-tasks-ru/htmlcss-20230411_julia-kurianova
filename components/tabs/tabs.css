@@ -5,6 +5,7 @@
 .tabs__scroller {
     display: flex;
     gap: 40px;
+    overflow-x: scroll;
 }
 
 .tabs__item {
@@ -59,6 +60,7 @@
     line-height: 24px;
     color: var(--grey-3);
     padding-bottom: 8px;
+    white-space: nowrap;
 }
 
 .tabs__title:hover {
@@ -67,7 +69,8 @@
 
 #all-tab:checked ~ .tabs__scroller [for="all-tab"],
 #complex-tab:checked ~ .tabs__scroller [for="complex-tab"],
-#simple-tab:checked ~ .tabs__scroller [for="simple-tab"] {
+#simple-tab:checked ~ .tabs__scroller [for="simple-tab"],
+#template-tab:checked ~ .tabs__scroller [for="template-tab"] {
     color: var(--black);
     border-bottom: 5px solid #212429;
 }
