@@ -15,6 +15,7 @@
 @import '../../components/avatar/avatar.css';
 @import '../../components/calendar/calendar.css';
 @import '../../components/modal/modal.css';
+@import '../../components/grid/grid.css';
 @import '../../components/footer/footer.css';
 
 :root {

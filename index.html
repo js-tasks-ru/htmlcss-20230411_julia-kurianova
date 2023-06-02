@@ -5,6 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./assets/css/main.css">
         <link rel="stylesheet" href="./components/tabs/tabs.css">
+        <link rel="stylesheet" href="./07-lection5/01-checkbox/checkbox.css">
+        <link rel="stylesheet" href="./07-lection5/02-radio/radio.css">
+
         <script defer src="./components/burger-menu/burger-menu.js"></script>
     </head>
     <body>
@@ -165,6 +168,69 @@
                              <!-- Custom form elements -->
                             <div class="card preview__card">
                                 <div class="card__content">
+                                    <div class="grid-2-cols">
+                                        <label class="checkbox">
+                                            <input type="checkbox" class="checkbox__input">
+                                            <div class="checkbox__state">
+                                                <div class="checkbox__control">
+                                                    <svg class="checkbox__icon" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <use href="../../assets/images/icons.svg#tick" />
+                                                    </svg>
+                                                </div>
+                                                <div class="checkbox__title">Default</div>
+                                            </div>
+                                        </label>
+
+                                        <label class="radio">
+                                            <input type="radio" class="radio__input" name="radio-name" value="Default">
+                                            <div class="radio__state">
+                                                <div class="radio__control"></div>
+                                                <div class="radio__title">Default</div>
+                                            </div>
+                                        </label>
+
+
+                                        <label class="checkbox">
+                                            <input type="checkbox" class="checkbox__input" checked>
+                                            <div class="checkbox__state">
+                                                <div class="checkbox__control">
+                                                    <svg class="checkbox__icon" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <use href="../../assets/images/icons.svg#tick" />
+                                                    </svg>
+                                                </div>
+                                                <div class="checkbox__title">Selected</div>
+                                            </div>
+                                        </label>
+
+                                        <label class="radio">
+                                            <input type="radio" class="radio__input" checked name="radio-name" value="Selected">
+                                            <div class="radio__state">
+                                                <div class="radio__control"></div>
+                                                <div class="radio__title">Selected</div>
+                                            </div>
+                                        </label>
+                                
+                                        <label class="checkbox">
+                                            <input type="checkbox" class="checkbox__input" disabled>
+                                            <div class="checkbox__state">
+                                                <div class="checkbox__control">
+                                                    <svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="checkbox__title">Disabled</div>
+                                            </div>
+                                        </label>
+                                                        
+                                        <label class="radio">
+                                            <input type="radio" class="radio__input" name="radio-name" disabled value="Disabled">
+                                            <div class="radio__state">
+                                                <div class="radio__control"></div>
+                                                <div class="radio__title">Disabled</div>
+                                            </div>
+                                        </label>
+                                
+                                    </div>                                
                                 </div>
                                 <div class="card__footer">
                                     <div class="card__title">Custom form elements</div>
@@ -242,8 +308,7 @@
                                     <div class="modal modal_preview" id="modal">
                                         <div class="modal__content">
                                             <svg class="modal__close" id="modal-close" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <!-- <use href="../../assets/images/icons.svg#cross" /> -->
-                                                <use href="./assets/images/icons.svg#cross" />
+                                                <use href="../../assets/images/icons.svg#cross" />
                                             </svg>
                                             <div class="modal__title">
                                                 Modal title
