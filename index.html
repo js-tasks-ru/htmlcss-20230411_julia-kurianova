@@ -4,10 +4,6 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./assets/css/main.css">
-        <link rel="stylesheet" href="./04-lection2/01-histogram/histogram.css">
-        <link rel="stylesheet" href="./06-lection4/01-avatar/avatar.css">
-        <link rel="stylesheet" href="./05-lection3/01-tooltip/tooltip.css">
-        <link rel="stylesheet" href="./05-lection3/03-calendar/calendar.css">
         <link rel="stylesheet" href="./components/tabs/tabs.css">
         <script defer src="./components/burger-menu/burger-menu.js"></script>
     </head>
@@ -242,7 +238,24 @@
 
                             <!-- modal -->
                             <div class="card preview__card">
-                                <div class="card__content"></div>
+                                <div class="card__content">
+                                    <div class="modal modal_preview" id="modal">
+                                        <div class="modal__content">
+                                            <svg class="modal__close" id="modal-close" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <!-- <use href="../../assets/images/icons.svg#cross" /> -->
+                                                <use href="./assets/images/icons.svg#cross" />
+                                            </svg>
+                                            <div class="modal__title">
+                                                Modal title
+                                            </div>
+                                            <div class="modal__text">
+                                                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                                                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <button type="button" id="modal-open" class="button button_primary">Open modal</button>                             -->
+                                </div>
                                 <div class="card__footer">
                                     <div class="card__title">Modal dialog</div>
                                     <div class="card__subtitle">Container</div>
@@ -281,7 +294,7 @@
                                     <div class="card__subtitle">Element</div>
                                 </div>
                             </div>
-                            
+
                         </div>    
                     </div>
                 </div>
@@ -590,5 +603,6 @@
             </footer>
         </div>
     </body>
-    <script src="./04-lection2/01-histogram/index.js"></script>
+    <script src="./components/histogram/index.js"></script>
+    <script src="./components/modal/index.js"></script>
 </html>
