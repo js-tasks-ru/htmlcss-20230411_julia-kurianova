@@ -6,21 +6,31 @@ input[type="radio"] {
     display: none;
 }
 
-.tabs__content_complex,
-.tabs__content_simple {
+/* all tab checked */
+#all-tab:checked ~ .tabs__content_all {
+    display: block;
+}
+#all-tab:checked ~ .tabs__content_complex,
+#all-tab:checked ~ .tabs__content_simple {
     display: none;
 }
 
-#all-tab:checked ~ .tabs__content {
-    display: block;
-}
-
+/* complex tab checked */
 #complex-tab:checked ~ .tabs__content_complex {
     display: block;
 }
+#complex-tab:checked ~ .tabs__content_all,
+#complex-tab:checked ~ .tabs__content_simple {
+    display: none;
+}
 
+/*  simple tab checked */
 #simple-tab:checked ~ .tabs__content_simple {
     display: block;
+}
+#simple-tab:checked ~ .tabs__content_all,
+#simple-tab:checked ~ .tabs__content_complex {
+    display: none;
 }
 
 .tabs__title {
