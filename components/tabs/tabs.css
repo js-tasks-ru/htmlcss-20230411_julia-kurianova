@@ -1,3 +1,7 @@
+.tabs {
+    position: relative;
+}
+
 .tabs__content {
     background: #F9FAFC;
 }
@@ -73,4 +77,11 @@
 #template-tab:checked ~ .tabs__scroller [for="template-tab"] {
     color: var(--black);
     border-bottom: 5px solid #212429;
+}
+
+.tabs__button {
+    position: absolute;
+    bottom: 92px;
+    left: 50%;
+    transform: translateX(-50%);
 }
