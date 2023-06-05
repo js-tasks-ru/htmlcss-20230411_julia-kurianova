@@ -4,6 +4,7 @@
 
 .tabs__content {
     background: #F9FAFC;
+    display: none;
 }
 
 .tabs__scroller {
@@ -16,44 +17,12 @@
     display: none;
 }
 
-/* all tab checked */
-#all-tab:checked ~ .tabs__content_all {
+/* tab checked */
+.tabs__item_all:checked ~ .tabs__content_all,
+.tabs__item_complex:checked ~ .tabs__content_complex,
+.tabs__item_simple:checked ~ .tabs__content_simple,
+.tabs__item_template:checked ~ .tabs__content_template {
     display: block;
-}
-#all-tab:checked ~ .tabs__content_complex,
-#all-tab:checked ~ .tabs__content_simple,
-#all-tab:checked ~ .tabs__content_template {
-    display: none;
-}
-
-/* complex tab checked */
-#complex-tab:checked ~ .tabs__content_complex {
-    display: block;
-}
-#complex-tab:checked ~ .tabs__content_all,
-#complex-tab:checked ~ .tabs__content_simple,
-#complex-tab:checked ~ .tabs__content_template {
-    display: none;
-}
-
-/*  simple tab checked */
-#simple-tab:checked ~ .tabs__content_simple {
-    display: block;
-}
-#simple-tab:checked ~ .tabs__content_all,
-#simple-tab:checked ~ .tabs__content_complex,
-#simple-tab:checked ~ .tabs__content_template {
-    display: none;
-}
-
-/*  template tab checked */
-#template-tab:checked ~ .tabs__content_template {
-    display: block;
-}
-#template-tab:checked ~ .tabs__content_all,
-#template-tab:checked ~ .tabs__content_complex,
-#template-tab:checked ~ .tabs__content_simple {
-    display: none;
 }
 
 .tabs__title {
@@ -71,17 +40,10 @@
     cursor: pointer;
 }
 
-#all-tab:checked ~ .tabs__scroller [for="all-tab"],
-#complex-tab:checked ~ .tabs__scroller [for="complex-tab"],
-#simple-tab:checked ~ .tabs__scroller [for="simple-tab"],
-#template-tab:checked ~ .tabs__scroller [for="template-tab"] {
+.tabs__item_all:checked ~ .tabs__scroller [for="all-tab"],
+.tabs__item_complex:checked ~ .tabs__scroller [for="complex-tab"],
+.tabs__item_simple:checked ~ .tabs__scroller [for="simple-tab"],
+.tabs__item_template:checked ~ .tabs__scroller [for="template-tab"] {
     color: var(--black);
     border-bottom: 5px solid #212429;
-}
-
-.tabs__button {
-    position: absolute;
-    bottom: 92px;
-    left: 50%;
-    transform: translateX(-50%);
 }
