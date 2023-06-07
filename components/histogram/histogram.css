@@ -1,0 +1,51 @@
+.histogram {
+    font-style: normal;
+    font-weight: 400;
+    max-width: 354px;
+    width: 100%;
+    border: 1px solid var(--grey-3);
+    border-radius: 8px;
+    padding: 16px 24px 24px;
+}
+
+.histogram__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+}
+
+.histogram__title {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--black);
+    opacity: 0.8;
+}
+
+.histogram__link {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+    color: var(--blue);
+}
+
+.histogram__amount {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 39px;
+    color: var(--black);
+}
+
+.histogram__cols {
+    display: flex;
+    gap: 1px;
+    align-items: flex-end;
+    height: 50px;
+}
+
+.histogram__col {
+    flex-basis: 9px;
+    background-color: var(--blue);
+}

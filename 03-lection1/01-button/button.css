@@ -51,7 +51,7 @@
 
 .button_alt {
 	color: var(--grey-4);
-	background-color: var(--white);
+	background-color: transparent;
 	border: 1px solid var(--grey-3);
 }
 

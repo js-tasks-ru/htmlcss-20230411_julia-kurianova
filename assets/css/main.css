@@ -3,12 +3,19 @@
 @import '../../components/page/page.css';
 @import '../../components/container/container.css';
 @import '../../components/header/header.css';
+@import '../../components/burger-menu/burger-menu.css';
 @import '../../components/preview/preview.css';
 @import '../../components/sidemenu/sidemenu.css';
 @import '../../components/sidebar/sidebar.css';
 @import '../../components/card/card.css';
 @import '../../components/component/component.css';
 @import '../../components/toggler/toggler.css';
+@import '../../components/histogram/histogram.css';
+@import '../../components/tooltip/tooltip.css';
+@import '../../components/avatar/avatar.css';
+@import '../../components/calendar/calendar.css';
+@import '../../components/modal/modal.css';
+@import '../../components/grid/grid.css';
 @import '../../components/footer/footer.css';
 
 :root {

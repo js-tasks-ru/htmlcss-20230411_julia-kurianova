@@ -1,3 +1,8 @@
+.preview {
+    background: var(--white);
+    margin-top: 15px;
+}
+
 .preview__title {
     font-size: 50px;
     line-height: 64px;
@@ -16,12 +21,6 @@
     grid-template-columns: repeat(auto-fit, 350px);
     justify-items: center;
     justify-content: center;
-}
-
-@media (max-width: 1110px) {
-    .preview__title {
-        padding: 0 16px;
-    }
 }
 
 @media (max-width: 768px) {
